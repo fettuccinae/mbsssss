@@ -3,7 +3,7 @@ Copyright (c) 2014, 2015 Wieland Hoffmann, Jeff Weeks
 -->
 <types>
   <fieldtype name="string" class="solr.StrField" sortMissingLast="false" docValues="false" />
-  <fieldType name="long" class="solr.LongPointField" positionIncrementGap="0" docValues="false" />
+  <fieldType name="long" class="solr.LongPointField" positionIncrementGap="0" docValues="true"/>
   <fieldType name="mbid" class="solr.UUIDField" omitNorms="true" docValues="false" />
   <fieldType name="storefield" class="solr.StrField" docValues="false" />
   <fieldType name="storefieldmv" class="solr.StrField" docValues="true" />
