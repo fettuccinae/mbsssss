@@ -28,7 +28,7 @@
   <field name="alias" type="text_mult" indexed="true" stored="false" multiValued="true" />
   <field name="alias_json" type="storefield" indexed="false" stored="true" multiValued="true" />
 
-  <field name="tag_name" type="text_mult" indexed="true" stored="true" multiValued="true" />
+  <field name="tag" type="text_mult" indexed="true" stored="true" multiValued="true" />
   <field name="tag_count" type="int" indexed="false" stored="true" multiValued="true" />
 
   <field name="type_name" type="lowercase" indexed="true" stored="true" omitNorms="true"
