@@ -31,7 +31,7 @@
   <field name="tag" type="text_mult" indexed="true" stored="true" multiValued="true" />
   <field name="tag_count" type="int" indexed="false" stored="true" multiValued="true" />
 
-  <field name="type_name" type="lowercase" indexed="true" stored="true" omitNorms="true"
+  <field name="type" type="lowercase" indexed="true" stored="true" omitNorms="true"
     omitTermFreqAndPositions="true" />
   <field name="type_gid" type="mbid" indexed="false" stored="true" />
 
