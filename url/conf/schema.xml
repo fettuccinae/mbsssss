@@ -16,13 +16,14 @@
   <field name="targetid" type="string" indexed="true" stored="false" multiValued="true" />
   <field name="targettype" type="lowercase" indexed="true" stored="false" multiValued="true" />
   <field name="uid" type="mbid" indexed="true" stored="false" />
-  <field name="url" type="string" indexed="true" stored="false" />
+  <field name="url" type="string" indexed="true" stored="true" />
   <!-- queries for paths match documents at that path, or in ancestor paths -->
   <field name="url_ancestor" type="ancestor_path" indexed="true" stored="false" />
   <!-- queries for paths match documents at that path, or in descendent paths -->
   <field name="url_descendent" type="descendent_path" indexed="true" stored="false" />
-  <!-- Holds data for reponse writer -->
-  <field name="_store" type="storefield" indexed="false" stored="true" multiValued="false" required="false" />
+
+  <field name="rel_json" type="storefield" indexed="false" stored="true" multiValued="true" />
+
   <!-- If you remove this field, you must _also_ disable the update log in solrconfig.xml
      or Solr won't start. _version_ and update log are required for SolrCloud. -->
   <field name="_version_" type="long" indexed="true" stored="true" />
