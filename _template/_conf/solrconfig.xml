@@ -5,7 +5,9 @@
   <xi:include href="common/directoryFactory.xml" />
   <xi:include href="common/dataDir.xml" />
   <xi:include href="common/schemaFactory.xml" />
-  <codecFactory name="CodecFactory" class="solr.SchemaCodecFactory" />
+  <codecFactory name="CodecFactory" class="solr.SchemaCodecFactory">
+    <str name="compressionMode">BEST_COMPRESSION</str>
+  </codecFactory>
   <xi:include href="common/queryCache.xml" />
   <updateHandler class="solr.DirectUpdateHandler2">
     <updateLog>
